@@ -19,3 +19,6 @@ series.pop();
 console.log("------ DESPUÉS DE LAS ACTUALIZACIONES ----");
 console.log("Edad: ", edad);
 console.log("Series: ", series);
+
+let usuario = "usuario-db-desarrollo";
+let db = "contraseña-db-desarrollo";

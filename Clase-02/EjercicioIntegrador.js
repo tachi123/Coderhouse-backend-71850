@@ -39,7 +39,7 @@ class TicketManager{
             console.error("USUARIO YA REGISTRADO");
             throw new Error('Usuario ya registrado');
         }
-        this.#eventos.participantes.push(nuevoEvento);
+        this.#eventos.participantes.push(idUsuario);
     }
 
     ponerEventoEnGira(idEvento, nuevaLocalidad, nuevaFecha){

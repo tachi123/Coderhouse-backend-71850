@@ -39,7 +39,7 @@ class TicketManager{
             console.error("USUARIO YA REGISTRADO");
             throw new Error('Usuario ya registrado');
         }
-        this.#eventos.participantes.push(idUsuario);
+        evento.participantes.push(idUsuario);
     }
 
     ponerEventoEnGira(idEvento, nuevaLocalidad, nuevaFecha){
@@ -65,3 +65,15 @@ class TicketManager{
 }
 
 const unaInstancia = new TicketManager();
+
+unaInstancia.agregarEvento("Los piojos", "Estado Único", "50000");
+
+console.log(unaInstancia.eventos);
+
+unaInstancia.ponerEventoEnGira(1, "Córdoba", new Date('2026-01-01'));
+console.log(unaInstancia.eventos);
+
+unaInstancia.agregarUsuario(1, 10);
+unaInstancia.agregarUsuario(1, 20);
+//unaInstancia.agregarUsuario(1, 20); //PRUEBA DE THROW NEW ERROR
+console.log(unaInstancia.eventos);

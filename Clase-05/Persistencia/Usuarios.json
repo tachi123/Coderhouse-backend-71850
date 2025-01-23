@@ -1,0 +1,9 @@
+[
+  {
+    "id": "1",
+    "nombre": "Nahuel",
+    "apellido": "Ramírez",
+    "edad": 33,
+    "curso": "Programación backend"
+  }
+]

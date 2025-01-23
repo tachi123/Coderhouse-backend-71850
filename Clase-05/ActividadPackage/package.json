@@ -1,7 +1,7 @@
 {
-  "name": "generarnumerosaleatorios",
+  "name": "actividadpackage",
   "version": "1.0.0",
-  "description": "Aplicación que genera un número aleatorio",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "generarnumerosaleatorios": "file:"
-  }
+    "actividadpackage": "file:"
+  },
+  "type": "module"
 }

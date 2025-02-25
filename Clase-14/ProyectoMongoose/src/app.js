@@ -10,6 +10,10 @@ const port = process.env.PORT;
 
 const app = express();
 
+//Middleware para analizar el cuerpo de las solicitudes
+app.use(express.json());
+app.use(express.urlencoded({encoded: true}));
+
 app.listen(port, () => console.log(`Listening on PORT: ${port}`));
 
 mongoose.connect(urlMongo)

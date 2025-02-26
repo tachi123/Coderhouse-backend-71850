@@ -15,7 +15,7 @@ mongoose.connect(urlMongo)
     .then( () => console.log("Conexión a MongoDB Atlas exitosa"))
     .catch( error => console.error("Error al conectar a MongoDB Atlas: ", error));
 
-    
+
 app.listen(port, () => console.log(`Listening on PORT: ${port}`));
 
 app.use('/api/student', studentRouter);

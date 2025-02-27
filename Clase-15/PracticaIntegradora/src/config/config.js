@@ -11,7 +11,7 @@ import dotenv from 'dotenv';
  * Por defecto dotenv.config() carga el archivo .env posicionado en la carpeta raíz del proyecto,
  * es decir, donde esta el package.json
  * Si llegara el caso que no carga el archivo .env es importante indicar el path por ejemplo así:
- * dotenv.config({ path: "../.env"});
+ * dotenv.config({ path: "../.env"}); Hubo conflicto en instalaciones de otros framework
  */
 dotenv.config(); //Nos permite poder trabajar con las variables de entorno
 

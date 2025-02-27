@@ -2,5 +2,9 @@
 <ul>
     {{#each products}}
         <h2>{{this.cod}} - {{this.nombre}}</h2>
+        <a href="/product/{{this.cod}}">Ver detalle</a>
+        <form action="/product/{{this._id}}?_method=DELETE" method="POST">
+            <button type="submit" class="button-error">Eliminar</button>
+        </form>
     {{/each}}
 </ul>

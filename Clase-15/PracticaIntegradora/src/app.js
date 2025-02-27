@@ -3,6 +3,7 @@ import handlebars from 'express-handlebars'; //Motor de plantillas para las vist
 import __dirname from './utils.js';
 import mongoose from 'mongoose';
 import { config } from './config/config.js'; //Importo el objeto que almacena las variables de entorno
+import methodOverride from 'method-override';
 
 //Importación de los routers
 import viewsRouter from './routes/views.router.js';
@@ -29,6 +30,9 @@ mongoose.connect(config.URL_MONGODB)
         console.error("Error en la conexión ", error);
         process.exit(); //Cerrar o detener la aplicación
     })
+
+//Para poder reescribir e interpretar el valor del campo _method en un formulario y poder hacer DELETE
+app.use(methodOverride('_method'));
 
 app.listen(config.PORT, () => console.log(`Listening on port ${config.PORT}`));
 
